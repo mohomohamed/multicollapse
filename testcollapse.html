@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h2>Simple Multi Collapsible</h2>
+      <p>Needed this for one of my projects - The Kitchen</p>
+
+      <div>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseone">Simple 1</button>
+
+        <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapsetwo">Simple 2</button>
+
+        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#collapsethree">Simple 3</button>
+
+        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#collapsefour">Simple 4</button>
+
+        <div id="collapseone" class="collapse card card-body">test1</div>
+
+        <div id="collapsetwo" class=" collapse card card-body">test2</div>
+
+        <div id="collapsethree" class="collapse card card-body">test3</div>
+
+        <div id="collapsefour" class="collapse card card-body">test4</div>
+
+      </div>
+
+<script>
+jQuery('button').click( function(e) {
+    jQuery('.collapse').collapse('hide');
+});
+</script>
+
+
+    </div>
+
+  </body>
+
+</html>
