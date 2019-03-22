@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+        <a class="btn" data-toggle="collapse" href="#home" role="button" aria-expanded="false" aria-controls="home">Home</a>
+        </li>
+        
+        <li class="active">
+        <a class="btn" data-toggle="collapse" href="#dinner" role="button" aria-expanded="false" aria-controls="dinner">Dinner</a>
+        </li>
+        
+        <li class="active">
+        <a class="btn" data-toggle="collapse" href="#food" role="button" aria-expanded="false" aria-controls="food">Food</a>
+        </li>
+        
+        <li class="active">
+        <a class="btn" data-toggle="collapse" href="#meal" role="button" aria-expanded="false" aria-controls="meal">Meal</a>
+        </li>
+      </ul>
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="collapse" id="home">
+  <div class="card card-body">
+the place where one lives permanently, especially as a member of a family or household.
+  </div>
+</div>
+
+<div class="collapse" id="dinner">
+  <div class="card card-body">
+the main meal of the day, taken either around midday or in the evening.
+  </div>
+</div>
+
+
+<div class="collapse" id="food">
+  <div class="card card-body">
+any nutritious substance that people or animals eat or drink or that plants absorb in order to maintain life and growth.
+  </div>
+</div>
+
+
+<div class="collapse" id="meal">
+  <div class="card card-body">
+any of the regular occasions in a day when a reasonably large amount of food is eaten.
+  </div>
+</div>
+
+<script>
+jQuery('a').click( function(e) {
+    jQuery('.collapse').collapse('hide');
+});
+</script>
+
+
+</body>
+</html>
